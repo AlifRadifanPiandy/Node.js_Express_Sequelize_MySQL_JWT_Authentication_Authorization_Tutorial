@@ -1,4 +1,4 @@
-# Node.js Express MySQL Sequelize JWT Authentication & Authorization Tutorial
+# Node.js_Express_Sequelize_MySQL_JWT_Authentication_Authorization_Tutorial
 
 This repository contains a comprehensive tutorial on how to implement authentication and authorization in a Node.js application using Express, MySQL, Sequelize, and JSON Web Tokens (JWT).
 
@@ -49,6 +49,12 @@ Make sure you have Node.js and MySQL installed on your system.
    ```bash
    npm start
    ```
+
+## API Documentation
+
+API documentation is available in Postman format. You can import the Postman JSON file that accompanies this project to get complete documentation about the API endpoints and required requests.
+
+https://documenter.getpostman.com/view/24200467/2sA3XJn5bM
 
 ## Contributing
 

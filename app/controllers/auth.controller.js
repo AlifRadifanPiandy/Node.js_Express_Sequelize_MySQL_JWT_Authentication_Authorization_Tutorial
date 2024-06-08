@@ -47,7 +47,7 @@ exports.signin = (req, res) => {
   })
     .then(async (user) => {
       if (!user) {
-        return res.status(404).send({ message: "User Not found." });
+        return res.status(404).send({ message: "User not found." });
       }
 
       const passwordIsValid = bcrypt.compareSync(
@@ -93,7 +93,7 @@ exports.refreshToken = async (req, res) => {
   const { refreshToken: requestToken } = req.body;
 
   if (requestToken == null) {
-    return res.status(403).json({ message: "Refresh Token is required!" });
+    return res.status(403).json({ message: "Refresh token is required!" });
   }
 
   try {
@@ -110,7 +110,7 @@ exports.refreshToken = async (req, res) => {
       RefreshToken.destroy({ where: { id: refreshToken.id } });
       
       res.status(403).json({
-        message: "Refresh token was expired. Please make a new signin request",
+        message: "Refresh token was expired. Please make a new signin request.",
       });
       return;
     }
