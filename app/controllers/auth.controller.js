@@ -93,7 +93,7 @@ exports.refreshToken = async (req, res) => {
   const { refreshToken: requestToken } = req.body;
 
   if (requestToken == null) {
-    return res.status(403).json({ message: "Refresh token is required!" });
+    return res.status(403).json({ message: "Refresh Token is required!" });
   }
 
   try {
